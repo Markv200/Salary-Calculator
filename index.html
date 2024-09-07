@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <script defer src="myscript.js"></script>
   <title>Salary Calculator</title>
 </head>
 <body>
@@ -11,10 +12,82 @@
   </header>
   <main>
     <h2>Add Employee</h2>
+    <form onSubmit="submitForm(event)">
+     <input
+        id="firstNameInput"
+        placeholder="First Name"
+        type="text"
+      >
+      <input
+        id="lastNameInput"
+        placeholder="Last Name"
+        type="text"
+
+      >
+      <input
+        id="idInput"       
+        placeholder="ID"
+        type="text"
+      >
+      <input 
+        id="titleInput"
+        placeholder="Title"
+        type="text"
+      >
+      <input
+        id="annualSalaryInput"
+        placeholder="Annaul Salary"
+        type="text"
+      >
+    <button type="submit" class="rightbutton">Submit</button>
+    </form >
     <h2>Employees</h2>
+    <table>
+      <colgroup>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID</th>
+          <th>Title</th>
+          <th>AnnualSalary</th>
+          <th></th>
+        </tr>
+      </colgroup>
+      <tr>
+        <tr>
+          <td>need to add!</td>
+          <td>sf</td>
+          <td>sf</td>
+          <td>sf</td>
+          <td>sf</td>
+          <td><button id="deleteButton" class="delete-button">Delete</button></td>
+
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>sf</td>
+          <td>sf</td>
+          <td>sf</td>
+          <td><button id="deleteButton" class="delete-button">Delete</button></td>
+        </tr>
+        <tr>
+          <td></td>     
+          <td>sf</td>
+          <td>sf</td>
+          <td>sf</td>
+          <td></td>
+          <td><button id="deleteButton" class="delete-button">Delete</button></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+    </table>
+    
   </main>
   <footer>
     <p>Total Monthly</p>
   </footer>
+  
 </body>
 </html>
