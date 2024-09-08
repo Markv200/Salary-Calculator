@@ -47,9 +47,11 @@ table {
   th, td {
     padding: .5em;
     min-width: 3.5em;
+    
   }
   thead{
     background-color: rgb(114, 19, 19);
-    color: beige;
+    color:beige
   }
  
+  
