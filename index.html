@@ -14,28 +14,28 @@
     <h2>Add Employee</h2>
     <form onSubmit="submitForm(event)">
      <input
-        id="firstNameInput"
+        data-testid="firstNameInput"
         placeholder="First Name"
         type="text"
       >
       <input
-        id="lastNameInput"
+        data-testid="lastNameInput"
         placeholder="Last Name"
         type="text"
 
       >
       <input
-        id="idInput"       
+        data-testid="idInput"       
         placeholder="ID"
         type="text"
       >
       <input 
-        id="titleInput"
+        data-testid="titleInput"
         placeholder="Title"
         type="text"
       >
       <input
-        id="annualSalaryInput"
+        data-testid="annualSalaryInput"
         placeholder="Annaul Salary"
         type="text"
       >
@@ -43,7 +43,7 @@
     </form >
     <h2>Employees</h2>
     <table>
-      <colgroup>
+      <thead>
         <tr>
           <th>First Name</th>
           <th>Last Name</th>
@@ -51,8 +51,9 @@
           <th>Title</th>
           <th>AnnualSalary</th>
           <th></th>
+        </thead>
         </tr>
-      </colgroup>
+      
       <tr>
         <tr>
           <td>need to add!</td>

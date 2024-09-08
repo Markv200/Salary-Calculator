@@ -7,6 +7,7 @@
     display: flex;       
     justify-content: flex-end;
     text-align: right;
+
 }
 
 header{
@@ -37,6 +38,7 @@ table {
     width: 100%;
     text-align: left;
   }
+
   table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -46,13 +48,8 @@ table {
     padding: .5em;
     min-width: 3.5em;
   }
-  thead {
-    background: #7a7a7a;
-    color: #fcfcfc;
+  thead{
+    background-color: rgb(114, 19, 19);
+    color: beige;
   }
-  tbody tr:nth-child(odd){ 
-    background: #fcfcfc;
-  }
-  tbody tr:nth-child(even){
-    background: #dcdcdc;
-  }
+ 
