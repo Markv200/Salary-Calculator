@@ -54,4 +54,6 @@ table {
     color:beige
   }
  
-  
+  p{
+    text-align: right;
+  }

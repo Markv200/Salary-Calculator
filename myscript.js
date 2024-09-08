@@ -1,5 +1,11 @@
 console.log('sfhdfsbjh')
+let AnnualSalary = 0
 
+function onReady() {
+console.log('sdf')
+}
+
+onReady()
 
 function submitForm(event){
     event.preventDefault()
@@ -10,7 +16,29 @@ function submitForm(event){
     let inputtitle = document.querySelector('[data-testid="titleInput"]').value
     let inputSalary = document.querySelector('[data-testid="annualSalaryInput"]').value
 
-    
+    let Names = document.getElementById('Names') 
+    Names.innerHTML +=`
+    <tr>
+        <td>${inputfirstName}</td>
+        <td> ${inputlastName}</td>
+        <td> ${inputID}</td>
+        <td> ${inputtitle}</td>
+        <td> ${inputSalary}</td>
+        <td><button onClick = "deleteButton(event)">Delete</button</td>
+    </tr>`
+}
+
+function deleteButton(event){
+    let deleteButton = event.target
+    let  =  rowToDelete = deleteButton.closest('tr');
+    rowToDelete.remove()
+
 }
 
 
+function Color(){
+    let AnnualSalary = document.querySelector('[data-testid="annualSalaryInput"]').value
+    if (AnnualSalary >20000 ){
+}
+
+}
