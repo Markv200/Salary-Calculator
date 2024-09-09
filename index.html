@@ -39,7 +39,7 @@
         type="text"
       >
 
-      <button type="submit" class="rightbutton">Submit</button>
+      <button data-testid="submitButton" >Submit</button>   
     </form >
     <h2>Employees</h2>
     <table id = "Names">
@@ -53,17 +53,11 @@
           <th></th>
         </thead>
         </tr>
-         <!-- </tr>
-          <td><button id="deleteButton" class="delete-button">Delete</button></td>
-        </tr>
-        <tr>
-          <td><button id="deleteButton" class="delete-button">Delete</button></td>
-        </tr> -->
     </table>
     
   </main>
   <footer>
-    <p>Total Monthly</p>
+    <p>Total Monthly <span id='total'></span></p>
   </footer>
   
 </body>

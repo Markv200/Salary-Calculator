@@ -1,11 +1,22 @@
-console.log('sfhdfsbjh')
 let AnnualSalary = 0
-
 function onReady() {
 console.log('sdf')
 }
 
 onReady()
+
+function renderTotalMonth(){
+    let total = document.getElementById('total');
+    total.textContent = AnnualSalary
+    let Salary = document.querySelector("p")
+
+
+    if (AnnualSalary >20000 ){
+        Salary.classList.add('over-budget') 
+    }else{
+        Salary.classList.remove('over-budget')
+    }
+}
 
 function submitForm(event){
     event.preventDefault()
@@ -26,6 +37,14 @@ function submitForm(event){
         <td> ${inputSalary}</td>
         <td><button onClick = "deleteButton(event)">Delete</button</td>
     </tr>`
+    // form.reset();
+    let allInputs = document.querySelectorAll('input');
+    allInputs.forEach(singleInput => singleInput.value = '');
+
+    AnnualSalary += Number(inputSalary);
+    renderTotalMonth();
+
+
 }
 
 function deleteButton(event){
@@ -36,9 +55,3 @@ function deleteButton(event){
 }
 
 
-function Color(){
-    let AnnualSalary = document.querySelector('[data-testid="annualSalaryInput"]').value
-    if (AnnualSalary >20000 ){
-}
-
-}

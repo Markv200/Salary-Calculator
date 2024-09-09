@@ -1,14 +1,4 @@
-/*main{
-    background-color: aquamarine;
-}
-*/
 
-.rightbutton{
-    display: flex;       
-    justify-content: flex-end;
-    text-align: right;
-
-}
 
 header{
     background-color: rgb(224, 36, 67);
@@ -57,3 +47,9 @@ table {
   p{
     text-align: right;
   }
+
+
+  .over-budget{
+    color:darkgreen;
+  }
+
